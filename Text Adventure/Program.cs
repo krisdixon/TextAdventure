@@ -30,16 +30,19 @@ namespace Text_Adventure
             }
             else if (response == "The Works")
             {
-                Console.WriteLine("This has 3 patties, triple cheese, onions, lettuce and special sauce");
+                Console.WriteLine("This has 3 patties, triple cheese, onions, lettuce and our secret sauce");
             }
 
-            Console.WriteLine("{0}, Did you enjoy your burger", name);
-            Console.ReadLine();
-            if (response == "yes")
+            string input;
+            Console.WriteLine("{0}, Did you enjoy your burger?", name);
+            input = Console.ReadLine();
+                                
+        
+            if (input == "yes")
             {
-                Console.WriteLine("Glad you enjoyed it");
+                Console.WriteLine("Glad you enjoyed it.");
             }
-            else if (response == "no")
+            else if (input == "no")
             {
                 Console.WriteLine("Get out of here, no more burgers for you!");
             }
